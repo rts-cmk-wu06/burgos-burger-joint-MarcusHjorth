@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgos Burger joint</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <img class="header_icon" src="./images/burger_ikon@2x.png" alt="Burger Logo">
+        <h1 class="header_h1">Burgos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GALLERI</a></li>
+                <li><a href="#">ANBEFALEDE</a></li>
+                <li><a href="#">KONTAKT</a></li>
+            </ul>
+        </nav>
+        <img class="Header_background" src="./images/hero01.jpg" alt="Baggrundsbillede af en burger">
+        <div class="hero">
+            <h1 class="hero_h1"> Vælg Din Favorit Yummy</h1>
+            <button class="hero_btn">START</button>
+        </div>
+    </header>
+
+
+    <main class="main_container">
+
+        <section class="section_add">
+                <img class="section_add_img" src="./images/reklame01.jpg" alt="20% sommer-tilbud">
+                <div class="section_add_text">
+                    <h1 class="section_add_h1">-20%</h1>
+                    <h3 class="section_add_h3">SOMMER-Tilbud</h2>
+                    <p class="section_add_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Explicabo, impedit reiciendis blanditiis cupiditate necessitatibus 
+                        soluta, optio nihil dolorem libero odit tempora.</p>
+                </div>
+        </section>
+
+
+        <section class="section_gallery">
+            <h1 class="section_gallery_h1">GALLERI</h1>
+            <div class="gallery_container">
+                <div class="gallery">
+                    <figure> <!-- Vis det store billede -->
+                        <img id="large-image" src="./images/galleri05.jpg" alt="">
+                    </figure>
+                    
+                    <figure class="grid-container"> <!-- Vis de små billeder -->
+                        <img class="thumbnail" src="./images/galleri05.jpg" alt="">
+                        <img class="thumbnail" src="./images/galleri06.jpg" alt="">
+                        <img class="thumbnail" src="./images/galleri04.jpg" alt="">
+                    </figure> 
+                </div>
+
+                <article class="gallery_info">
+                    <h1 class="section_gallery_article_h1">Vores YUMMY opskrift</h1>
+                    <p class="section_gallery_article_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, 
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                        Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <br>
+                    <p class="section_gallery_article_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="recommended_section">
+            <h1 class="recommended_h1">ANBEFALEDE YUMMIES</h1>
+            <div class="recommended_container">
+                <div class="box-1">
+                    <figure>
+                        <img src="./images/favorit01.jpg" alt="">
+                    </figure>
+                    <h3 class="recommended_h3">Grilled Burger</h3>
+                    <p class="recommended_h3">65kr.</p>
+                    <button class="abf_btn"><img src="/images/burger_ikon.png" alt="burder logo" height="17px" width="17px">   FARVORIT</button>
+                </div>
+                <div class="box-2">
+                    <figure>
+                        <img src="./images/favorit02.jpg" alt="">
+                    </figure>
+                    <h3 class="recommended_h3">The Firehouse</h3>
+                    <p class="recommended_h3">70kr.</p>
+                    <button class="abf_btn"><img src="/images/burger_ikon.png" alt="burder logo" height="17px" width="17px">   FARVORIT</button>
+                </div>
+                <div class="box-3">
+                    <figure>
+                        <img src="./images/favorit03.jpg" alt="">
+                    </figure>
+                    <h3 class="recommended_h3">Grilled Burger</h3>
+                    <p class="recommended_h3">90kr.</p>
+                    <button class="abf_btn"><img src="/images/burger_ikon.png" alt="burder logo" height="17px" width="17px">   FARVORIT</button>
+                </div>
+                <div class="box-4">
+                    <figure>
+                        <img src="./images/favorit04.jpg" alt="">
+                    </figure>
+                    <h3 class="recommended_h3">Super Vegan</h3>
+                    <p class="recommended_h3">70kr.</p>
+                    <button class="abf_btn"><img src="/images/burger_ikon.png" alt="burder logo" height="17px" width="17px">   FARVORIT</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section_form">
+            <h1 class="section_form_h1">KONTAKT</h1>
+            <div class="footer_form">
+                <form method="POST" name="kontakt" id="kontakt" onsubmit="return valider(this);">
+                    <div>
+                        <input type="text" name="name" id="navn" placeholder=" Navn">
+                        <input type="email" name="Email" id="email" placeholder=" Email">
+                    </div> 
+                    <div>
+                        <textarea name="besked" id="besked" cols="85" rows="15" placeholder=" Skriv din besked her"></textarea>
+                    </div>
+                    
+                    <div>
+                        <button id="send">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <img class="footer_img" src="./images/footer01.png" alt="">
+        <div class="footer_info">
+            <h1>FØLG OS PÅ INSTAGRAM</h1>
+            <a href="#">@BURGOS_YUMMIES</a>
+        </div>
+    </footer>
+
+</body>
+    <script src="java.js"></script>
+</html>

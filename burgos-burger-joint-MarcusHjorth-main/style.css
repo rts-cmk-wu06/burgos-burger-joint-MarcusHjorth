@@ -1,0 +1,294 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+header {
+    position: relative;
+    height: auto;
+}
+
+.Header_background {
+    background-size: 100px;
+    width: 100%;
+
+}
+/* ----- Navigation ------- */
+
+.header_icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.header_h1 {
+    color: white;
+    position: absolute;
+    left: 140px;
+    top: 40px;
+
+}
+
+nav {
+    position: absolute;
+    right: 130px;
+    color: white;
+    top: 40px;
+}
+
+li {
+    display: inline;
+    margin: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+/* ---- Hero ----*/
+
+.hero {
+    position: absolute;
+    background: rgb(243,115,53);
+    background: linear-gradient(0deg, rgba(243,115,53,0.802784222737819) 0%, rgba(251,183,49,1) 100%);
+    height: 1258px;
+    width: 400px;
+    top: 0px;
+    left: 370px;
+}
+
+.hero_h1 {
+    font-size: 65px;
+    margin-top: 400px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+
+
+.hero_btn {
+    background-color: #FBB731;;
+    border-color: rgba(#FBB731);
+    border-radius: 15px;
+    border-width: 0px;
+    cursor: pointer;
+    height: 65px;
+    width: 175px;
+    margin-left: 100px;
+}
+
+
+/* ------- main -------- */
+.main_container {
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* ----- Sections reklame -----*/
+
+.section_add {
+    margin-top: 150px;
+    position: relative;
+    margin-left: 300px;
+
+}
+
+.section_add_figure {
+    margin: auto;
+}
+
+.section_add_img {
+    transform: rotate(180deg);
+    height: 600px;
+    width: 1300px;
+    
+}
+
+.section_add_text {
+    width: 700px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+}
+
+.section_add_h1 {
+    font-size: 80px;
+    margin: 10px;
+}
+.section_add_h3 {
+    margin-top: 100px;
+    font-size: 50px;
+}
+.section_add_p {
+    font-size: 20px;
+}
+
+
+/* ---- galleri ------ */
+
+
+.section_gallery {
+    display: inline;
+    margin-top: 150px;
+}
+
+.section_gallery_h1 {
+    margin-left: 440px;
+}
+
+.gallery_container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.gallery {
+    width: 30vw;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+#large-image {
+    width: 100%;
+}
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+
+.gallery_info {
+    width: 500px;
+}
+
+.section_gallery_article_h1 {
+    font-size: 30px;
+}
+
+.section_gallery_article_p {
+    font-size: 20px;
+}
+
+
+/* ------- Anbefalede Yummies -------*/
+
+.recommended_section {
+    background: rgb(243,115,53);
+    background: linear-gradient(0deg, rgba(243,115,53,1) 0%, rgba(253,200,48,1) 100%);
+    padding: 50px;
+    margin-top: 200px;
+
+}
+
+.recommended_h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: xx-large;
+    margin-left:  110px;
+}
+
+.recommended_container {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    font-family: 'Nunito Sans', sans-serif;
+    height: 480px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommended_h3, .p{
+    margin: 5px;
+}
+
+
+.abf_btn {
+    background-color: #FBB731;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+
+/* ----- form -------*/
+
+.footer_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.section_form_h1 {
+    margin-top: 100px;
+    margin-left: 630px;
+}
+
+#navn, #email, #besked {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 5px;
+    border-width: 1px;
+    border-color: #0C4C7B;
+    border-radius: 3px;
+}
+
+#navn, #email {
+    height: 50px;
+    width: 300px;
+}
+
+#besked {
+    resize: none;
+}
+
+
+
+#send {
+    background-color: #FBB731;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 0px;
+    cursor: pointer;
+    float: right;
+}
+
+/* ------ footer -------- */
+
+footer {
+    color: white;
+    margin-top: 250px;
+    background: rgb(54,83,104);
+    background: radial-gradient(circle, rgba(54,83,104,1) 0%, rgba(30,47,64,1) 100%);
+    height: 400px;
+}
+
+.footer_img{
+    position: absolute;
+    top: 4500px;
+    left: 50px;
+    height: 400px;
+}
+
+.footer_info {
+    width: 300px;
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+}
